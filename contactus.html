@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point 1</title>
+</head>
+<style> 
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: url(bg.png) no-repeat center;
+        background-size: cover;
+    }
+    main{
+        background: url(bg.png) no-repeat center;
+        background-size: cover;
+        height: 100%;
+    }
+
+    header{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        color: #ddd;
+    }
+
+    .border {
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+  transition: 0.5s;
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #34495e;
+}
+
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background: #2980b9;
+}
+</style>
+<body>
+    <main>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="border"></div>
+    <section class="contact-form ">
+    <form action="#" method="GET" id="form__input">
+        <input type="text" class="contact-form-text" onchange="validateEmail()" name="name" id="name" placeholder="Your name" title="Please enter your name" required>
+        <input type="email" class="contact-form-text" pattern="/^[^ ]+@[^ ]+\.[a-z]{2,3}$" name="email" id="email" placeholder="Your email" title="Please enter your email" required>
+        <input type="tel" class="contact-form-text" name="phone" id="phone" title="Please enter your phone" placeholder="Your phone">
+        <textarea class="contact-form-text" placeholder="Your message" name="message" id="message" title="Please enter your message" required></textarea>
+        <input type="submit" class="contact-form-btn" value="Send" name="send" id="send">
+    </form>
+</section>
+</main>
+<script>
+
+//     // Validate Email:
+// function validateEmail()
+// {
+    
+//     var email = document.getElementById("email");
+//     var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+     
+//     if(email.match(pattern))
+//         {
+//             alert("Your Email is : " + email);
+//         }
+//     else
+//         {
+//             alert("Incorrect Email");
+//         }
+// }
+</script>
+</body>
+</html>
